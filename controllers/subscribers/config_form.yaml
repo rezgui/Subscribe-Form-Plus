@@ -1,0 +1,31 @@
+# ===================================
+#  Form Behavior Config
+# ===================================
+
+# Record name
+name: Subscriber
+
+# Model Form Field configuration
+form: $/andradedev/subscribe/models/subscriber/fields.yaml
+
+# Model Class name
+modelClass: Andradedev\Subscribe\Models\Subscriber
+
+# Default redirect location
+defaultRedirect: andradedev/subscribe/subscribers
+
+# Create page
+create:
+    title: Create Subscriber
+    redirect: andradedev/subscribe/subscribers/update/:id
+    redirectClose: andradedev/subscribe/subscribers
+
+# Update page
+update:
+    title: Edit Subscriber
+    redirect: andradedev/subscribe/subscribers
+    redirectClose: andradedev/subscribe/subscribers
+
+# Preview page
+preview:
+    title: Preview Subscriber
