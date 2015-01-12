@@ -18,7 +18,7 @@ class Plugin extends PluginBase
         return [
             'name'        => 'Subscribe',
             'description' => 'A simple Subscribe form for October CMS',
-            'author'      => 'Andradedev',
+            'author'      => 'Jorge Andrade',
             'icon'        => 'icon-rss'
         ];
     }
