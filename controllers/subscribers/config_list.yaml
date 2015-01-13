@@ -3,16 +3,16 @@
 # ===================================
 
 # Model List Column configuration
-list: $/andradedev/subscribe/models/subscriber/columns.yaml
+list: $/jorgeandrade/subscribe/models/subscriber/columns.yaml
 
 # Model Class name
-modelClass: Andradedev\Subscribe\Models\Subscriber
+modelClass: JorgeAndrade\Subscribe\Models\Subscriber
 
 # List Title
 title: Manage Subscribers
 
 # Link URL for each record
-recordUrl: andradedev/subscribe/subscribers/update/:id
+recordUrl: jorgeandrade/subscribe/subscribers/update/:id
 
 # Message to display if the list is empty
 noRecordsMessage: backend::lang.list.no_records
