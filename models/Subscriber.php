@@ -1,4 +1,4 @@
-<?php namespace Andradedev\Subscribe\Models;
+<?php namespace JorgeAndrade\Subscribe\Models;
 
 use Model;
 

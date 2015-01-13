@@ -1,4 +1,4 @@
-<?php namespace Andradedev\Subscribe\Updates;
+<?php namespace JorgeAndrade\Subscribe\Updates;
 
 use Schema;
 use October\Rain\Database\Updates\Migration;
@@ -8,7 +8,7 @@ class CreateSubscribersTable extends Migration
 
     public function up()
     {
-        Schema::create('andradedev_subscribe_subscribers', function($table)
+        Schema::create('jorgeandrade_subscribe_subscribers', function($table)
         {
             $table->engine = 'InnoDB';
             $table->increments('id');
@@ -21,7 +21,7 @@ class CreateSubscribersTable extends Migration
 
     public function down()
     {
-        Schema::dropIfExists('andradedev_subscribe_subscribers');
+        Schema::dropIfExists('jorgeandrade_subscribe_subscribers');
     }
 
 }

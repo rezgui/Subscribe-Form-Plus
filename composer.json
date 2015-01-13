@@ -17,7 +17,7 @@
     },
     "autoload": {
         "psr-4": {
-            "Andradedev\\Subscribe\\": ""
+            "JorgeAndrade\\Subscribe\\": ""
         }
     },
     "extra": {

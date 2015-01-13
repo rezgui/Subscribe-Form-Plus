@@ -1,4 +1,4 @@
-<?php namespace Andradedev\Subscribe\Controllers;
+<?php namespace JorgeAndrade\Subscribe\Controllers;
 
 use BackendMenu;
 use Backend\Classes\Controller;
@@ -20,9 +20,9 @@ class Subscribers extends Controller
     {
         parent::__construct();
 
-        BackendMenu::setContext('Andradedev.Subscribe', 'subscribe', 'subscribers');
-        $this->addJs('/plugins/andradedev/subscribe/assets/javascript/tableExport.js');
-        $this->addJs('/plugins/andradedev/subscribe/assets/javascript/jquery.base64.js');
-        $this->addJs('/plugins/andradedev/subscribe/assets/javascript/subscribe-backend-scripts.js');
+        BackendMenu::setContext('JorgeAndrade.Subscribe', 'subscribe', 'subscribers');
+        $this->addJs('/plugins/jorgeandrade/subscribe/assets/javascript/tableExport.js');
+        $this->addJs('/plugins/jorgeandrade/subscribe/assets/javascript/jquery.base64.js');
+        $this->addJs('/plugins/jorgeandrade/subscribe/assets/javascript/subscribe-backend-scripts.js');
     }
 }

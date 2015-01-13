@@ -1,4 +1,4 @@
-<?php namespace Andradedev\Subscribe;
+<?php namespace JorgeAndrade\Subscribe;
 
 use System\Classes\PluginBase;
 
@@ -26,14 +26,14 @@ class Plugin extends PluginBase
     public function registerComponents()
     {
         return [
-            'Andradedev\Subscribe\Components\Subscriber'       => 'formSubscribe',
+            'JorgeAndrade\Subscribe\Components\Subscriber'       => 'formSubscribe',
         ];
     }
 
     public function registerPermissions()
     {
         return [
-            'andradedev.subscribe.subscribers'       => ['tab' => 'Subscribe', 'label' => 'Access Subscribers'],
+            'jorgeandrade.subscribe.subscribers'       => ['tab' => 'Subscribe', 'label' => 'Access Subscribers'],
         ];
     }
 
@@ -42,17 +42,17 @@ class Plugin extends PluginBase
         return [
             'subscribe' => [
                 'label'       => 'Subscribers',
-                'url'         => \Backend::url('andradedev/subscribe/subscribers'),
+                'url'         => \Backend::url('jorgeandrade/subscribe/subscribers'),
                 'icon'        => 'icon-rss',
-                'permissions' => ['andradedev.subscribe.*'],
+                'permissions' => ['jorgeandrade.subscribe.*'],
                 'order'       => 500,
 
                 'sideMenu' => [
                     'subscribers' => [
                         'label'       => 'Subscribers',
                         'icon'        => 'icon-rss',
-                        'url'         => \Backend::url('andradedev/subscribe/subscribers'),
-                        'permissions' => ['andradedev.subscribe.access_subscribers'],
+                        'url'         => \Backend::url('jorgeandrade/subscribe/subscribers'),
+                        'permissions' => ['jorgeandrade.subscribe.access_subscribers'],
                     ]
                 ]
 
@@ -63,7 +63,7 @@ class Plugin extends PluginBase
     public function registerMailTemplates()
 {
     return [
-        'andradedev.subscribe::mail.subscribe' => 'Welcome message for subscriber'
+        'jorgeandrade.subscribe::mail.subscribe' => 'Welcome message for subscriber'
     ];
 }
 

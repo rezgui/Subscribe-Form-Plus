@@ -1,7 +1,7 @@
-<?php namespace Andradedev\Subscribe\Components;
+<?php namespace JorgeAndrade\Subscribe\Components;
 
 use Cms\Classes\ComponentBase;
-use Andradedev\Subscribe\Models\Subscriber as Subs;
+use JorgeAndrade\Subscribe\Models\Subscriber as Subs;
 
 class Subscriber extends ComponentBase
 {
@@ -21,7 +21,7 @@ class Subscriber extends ComponentBase
 
     public function onRun()
     {
-        $this->addJs('/plugins/andradedev/subscribe/assets/javascript/subscribe-scripts.js');
+        $this->addJs('/plugins/jorgeandrade/subscribe/assets/javascript/subscribe-scripts.js');
     }
 
     public function onAddSubscriber()
@@ -36,7 +36,7 @@ class Subscriber extends ComponentBase
 
             $subscriber = Subs::create($data);
 
-            \Mail::send('andradedev.subscribe::mail.subscribe', $data, function($message) use ($data) {
+            \Mail::send('jorgeandrade.subscribe::mail.subscribe', $data, function($message) use ($data) {
                 $message->to($data['email'], 'Hi New Subscriber');
             });
 
