@@ -61,10 +61,10 @@ class Plugin extends PluginBase
     }
 
     public function registerMailTemplates()
-{
-    return [
-        'jorgeandrade.subscribe::mail.subscribe' => 'Welcome message for subscriber'
-    ];
-}
+    {
+        return [
+            'jorgeandrade.subscribe::mail.subscribe' => 'Welcome message for subscriber'
+        ];
+    }
 
 }

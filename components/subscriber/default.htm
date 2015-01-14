@@ -4,7 +4,7 @@
     </div>
 
     <div class="card-content author">
-        <form name="form-subscribe-andradedev" id="form-subscribe-andradedev" data-request="onAddSubscriber" data-request-update="'{{__SELF__}}::alert': '#result'">
+        <form name="form-subscribe-andradedev" id="form-subscribe-andradedev" data-request="{{__SELF__}}::onAddSubscriber" data-request-update="'{{__SELF__}}::alert': '#result'">
             <input type="email" class="form-control" name="email" placeholder="* Email" required>
             <input type="hidden" name="latitude" id="latitude">
             <input type="hidden" name="longitude" id="longitude">
