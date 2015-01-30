@@ -7,3 +7,6 @@
     - create_subscribers_code.php
     - create_subscribers_status.php
     - Adding a unsubscribe form.
+1.0.4:
+    - fixed code update
+    - update_code_column_subscriber.php
