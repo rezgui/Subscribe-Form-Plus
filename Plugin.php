@@ -27,6 +27,7 @@ class Plugin extends PluginBase
     {
         return [
             'JorgeAndrade\Subscribe\Components\Subscriber'       => 'formSubscribe',
+            'JorgeAndrade\Subscribe\Components\Unsubscribe'       => 'formUnsubscribe',
         ];
     }
 
@@ -63,7 +64,8 @@ class Plugin extends PluginBase
     public function registerMailTemplates()
     {
         return [
-            'jorgeandrade.subscribe::mail.subscribe' => 'Welcome message for subscriber'
+            'jorgeandrade.subscribe::mail.subscribe' => 'Welcome message for subscriber',
+            'jorgeandrade.subscribe::mail.unsubscribe' => 'Good bye message for subscriber'
         ];
     }
 

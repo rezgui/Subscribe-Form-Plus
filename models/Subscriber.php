@@ -21,19 +21,7 @@ class Subscriber extends Model
     /**
      * @var array Fillable fields
      */
-    protected $fillable = ['email', 'latitude', 'longitude'];
+    protected $fillable = ['email', 'latitude', 'longitude', 'code'];
 
-    /**
-     * @var array Relations
-     */
-    public $hasOne = [];
-    public $hasMany = [];
-    public $belongsTo = [];
-    public $belongsToMany = [];
-    public $morphTo = [];
-    public $morphOne = [];
-    public $morphMany = [];
-    public $attachOne = [];
-    public $attachMany = [];
 
 }

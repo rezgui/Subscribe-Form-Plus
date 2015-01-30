@@ -15,3 +15,7 @@ columns:
     longitude:
         label: Longitude
         searchable: true
+    status:
+        label: Subscribed
+        sortable: true
+        type: switch
