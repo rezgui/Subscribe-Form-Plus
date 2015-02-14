@@ -1,7 +1,7 @@
-<?php namespace REZGUI\Subscribe\Components;
+<?php namespace Rezgui\Subscribe\Components;
 
 use Cms\Classes\ComponentBase;
-use REZGUI\Subscribe\Models\Subscriber as Subs;
+use Rezgui\Subscribe\Models\Subscriber as Subs;
 
 class Unsubscribe extends ComponentBase
 {

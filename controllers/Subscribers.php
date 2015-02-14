@@ -1,4 +1,4 @@
-<?php namespace REZGUI\Subscribe\Controllers;
+<?php namespace Rezgui\Subscribe\Controllers;
 
 use BackendMenu;
 use Backend\Classes\Controller;

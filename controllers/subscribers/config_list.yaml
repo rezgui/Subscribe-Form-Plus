@@ -6,7 +6,7 @@
 list: $/rezgui/subscribe/models/subscriber/columns.yaml
 
 # Model Class name
-modelClass: REZGUI\Subscribe\Models\Subscriber
+modelClass: Rezgui\Subscribe\Models\Subscriber
 
 # List Title
 title: Manage Subscribers

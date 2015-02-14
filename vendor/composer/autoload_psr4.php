@@ -6,5 +6,5 @@ $vendorDir = dirname(dirname(__FILE__));
 $baseDir = dirname($vendorDir);
 
 return array(
-    'REZGUI\\Subscribe\\' => array($baseDir . '/'),
+    'Rezgui\\Subscribe\\' => array($baseDir . '/'),
 );

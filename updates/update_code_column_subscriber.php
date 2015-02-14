@@ -1,4 +1,4 @@
-<?php namespace REZGUI\Subscribe\Updates;
+<?php namespace Rezgui\Subscribe\Updates;
 
 use Schema;
 use Str;

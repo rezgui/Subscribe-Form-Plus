@@ -1,4 +1,4 @@
-<?php namespace REZGUI\Subscribe;
+<?php namespace Rezgui\Subscribe;
 
 use System\Classes\PluginBase;
 
@@ -26,8 +26,8 @@ class Plugin extends PluginBase
     public function registerComponents()
     {
         return [
-            'REZGUI\Subscribe\Components\Subscriber'       => 'formSubscribe',
-            'REZGUI\Subscribe\Components\Unsubscribe'       => 'formUnsubscribe',
+            'Rezgui\Subscribe\Components\Subscriber'       => 'formSubscribe',
+            'Rezgui\Subscribe\Components\Unsubscribe'       => 'formUnsubscribe',
         ];
     }
 

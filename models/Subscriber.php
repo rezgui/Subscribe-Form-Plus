@@ -1,4 +1,4 @@
-<?php namespace REZGUI\Subscribe\Models;
+<?php namespace Rezgui\Subscribe\Models;
 
 use Model;
 

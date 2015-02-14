@@ -1,9 +1,9 @@
-<?php namespace REZGUI\Subscribe\Components;
+<?php namespace Rezgui\Subscribe\Components;
 
 use Cms\Classes\ComponentBase;
 use Str;
 use URL;
-use REZGUI\Subscribe\Models\Subscriber as Subs;
+use Rezgui\Subscribe\Models\Subscriber as Subs;
 
 class Subscriber extends ComponentBase
 {

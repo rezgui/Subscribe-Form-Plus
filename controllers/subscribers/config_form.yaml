@@ -9,7 +9,7 @@ name: Subscriber
 form: $/rezgui/subscribe/models/subscriber/fields.yaml
 
 # Model Class name
-modelClass: REZGUI\Subscribe\Models\Subscriber
+modelClass: Rezgui\Subscribe\Models\Subscriber
 
 # Default redirect location
 defaultRedirect: rezgui/subscribe/subscribers
