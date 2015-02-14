@@ -1,4 +1,4 @@
-<?php namespace JorgeAndrade\Subscribe;
+<?php namespace REZGUI\Subscribe;
 
 use System\Classes\PluginBase;
 
@@ -16,9 +16,9 @@ class Plugin extends PluginBase
     public function pluginDetails()
     {
         return [
-            'name'        => 'Subscribe',
-            'description' => 'A simple Subscribe form for October CMS',
-            'author'      => 'Jorge Andrade',
+            'name'        => 'Subscribe Plus',
+            'description' => 'A another simple Subscribe form for October CMS (fork from andradedev/simple-subscribe)',
+            'author'      => 'Yacine REZGUI',
             'icon'        => 'icon-rss'
         ];
     }
@@ -26,15 +26,15 @@ class Plugin extends PluginBase
     public function registerComponents()
     {
         return [
-            'JorgeAndrade\Subscribe\Components\Subscriber'       => 'formSubscribe',
-            'JorgeAndrade\Subscribe\Components\Unsubscribe'       => 'formUnsubscribe',
+            'REZGUI\Subscribe\Components\Subscriber'       => 'formSubscribe',
+            'REZGUI\Subscribe\Components\Unsubscribe'       => 'formUnsubscribe',
         ];
     }
 
     public function registerPermissions()
     {
         return [
-            'jorgeandrade.subscribe.subscribers'       => ['tab' => 'Subscribe', 'label' => 'Access Subscribers'],
+            'rezgui.subscribe.subscribers'       => ['tab' => 'Subscribe', 'label' => 'Access Subscribers'],
         ];
     }
 
@@ -43,17 +43,17 @@ class Plugin extends PluginBase
         return [
             'subscribe' => [
                 'label'       => 'Subscribers',
-                'url'         => \Backend::url('jorgeandrade/subscribe/subscribers'),
+                'url'         => \Backend::url('rezgui/subscribe/subscribers'),
                 'icon'        => 'icon-rss',
-                'permissions' => ['jorgeandrade.subscribe.*'],
+                'permissions' => ['rezgui.subscribe.*'],
                 'order'       => 500,
 
                 'sideMenu' => [
                     'subscribers' => [
                         'label'       => 'Subscribers',
                         'icon'        => 'icon-rss',
-                        'url'         => \Backend::url('jorgeandrade/subscribe/subscribers'),
-                        'permissions' => ['jorgeandrade.subscribe.access_subscribers'],
+                        'url'         => \Backend::url('rezgui/subscribe/subscribers'),
+                        'permissions' => ['rezgui.subscribe.access_subscribers'],
                     ]
                 ]
 
@@ -64,8 +64,8 @@ class Plugin extends PluginBase
     public function registerMailTemplates()
     {
         return [
-            'jorgeandrade.subscribe::mail.subscribe' => 'Welcome message for subscriber',
-            'jorgeandrade.subscribe::mail.unsubscribe' => 'Good bye message for subscriber'
+            'rezgui.subscribe::mail.subscribe' => 'Welcome message for subscriber',
+            'rezgui.subscribe::mail.unsubscribe' => 'Good bye message for subscriber'
         ];
     }
 
