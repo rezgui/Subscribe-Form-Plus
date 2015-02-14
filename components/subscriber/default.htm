@@ -4,15 +4,16 @@
     </div>
 
     <div class="card-content author">
-        <form name="form-subscribe-andradedev" id="form-subscribe-andradedev" data-request="{{ __SELF__ }}::onAddSubscriber" data-request-update="'{{__SELF__}}::alert': '#result'">
+        <form name="form-subscribe-rezguidev" id="form-subscribe-rezguidev" data-request="{{ __SELF__ }}::onAddSubscriber" data-request-update="'{{__SELF__}}::alert': '#result'">
             <input type="email" class="form-control" name="email" placeholder="* Email" required>
+			<input type="hidden" name="sdate" id="sdate">
             <input type="hidden" name="latitude" id="latitude">
             <input type="hidden" name="longitude" id="longitude">
         </form>
     </div>
 
     <div class="card-action">
-        <button class="btn btn-primary btn-block" form="form-subscribe-andradedev">Subscribirse</button>
+        <button class="btn btn-primary btn-block" form="form-subscribe-rezguidev">Subscribirse</button>
     </div>
     
     <div id="result"></div>

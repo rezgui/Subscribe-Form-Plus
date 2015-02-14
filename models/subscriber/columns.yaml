@@ -9,6 +9,9 @@ columns:
     email:
         label: Email
         searchable: true
+    sdate:
+        label: Date Subscribe
+        searchable: true		
     latitude:
         label: Latitude
         searchable: true

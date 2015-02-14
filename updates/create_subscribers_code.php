@@ -9,17 +9,17 @@ class CreateSubscribersCode extends Migration
 
     public function up()
     {
-        Schema::table('andradedev_subscribe_subscribers', function($table)
+        Schema::table('rezguidev_subscribe_subscribers', function($table)
         {
             $table->string('code')->nullable()->after('longitude');
         });
 
-        \DB::update("update andradedev_subscribe_subscribers set code = '{Str::random(20)}' ");
+        \DB::update("update rezguidev_subscribe_subscribers set code = '{Str::random(20)}' ");
     }
 
     public function down()
     {
-        Schema::table('andradedev_subscribe_subscribers', function($table)
+        Schema::table('rezguidev_subscribe_subscribers', function($table)
         {
             $table->dropColumn('code');
         });

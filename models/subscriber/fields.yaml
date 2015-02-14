@@ -6,6 +6,9 @@ fields:
     email:
         label: Email
         disabled: true
+    sdate:
+        label: Date Subscribe
+        disabled: true		
     latitude:
         label: Latitude
         disabled: true

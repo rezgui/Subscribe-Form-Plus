@@ -9,12 +9,12 @@ class UpdateCodeColumnSubscriber extends Migration
 
     public function up()
     {
-        \DB::update("update andradedev_subscribe_subscribers set code = '".Str::random(20)."', status = 1 ");
+        \DB::update("update rezguidev_subscribe_subscribers set code = '".Str::random(20)."', status = 1 ");
     }
 
     public function down()
     {
-        Schema::table('andradedev_subscribe_subscribers', function($table)
+        Schema::table('rezguidev_subscribe_subscribers', function($table)
         {
             $table->dropColumn('code');
         });

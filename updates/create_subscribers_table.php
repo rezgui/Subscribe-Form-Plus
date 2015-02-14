@@ -8,11 +8,12 @@ class CreateSubscribersTable extends Migration
 
     public function up()
     {
-        Schema::create('andradedev_subscribe_subscribers', function($table)
+        Schema::create('rezguidev_subscribe_subscribers', function($table)
         {
             $table->engine = 'InnoDB';
             $table->increments('id');
             $table->string('email')->unique();
+            $table->date('sdate')->default(date("Y-m-d H:i:s"));			
             $table->string('latitude')->nullable();
             $table->string('longitude')->nullable();
             $table->timestamps();
@@ -21,7 +22,7 @@ class CreateSubscribersTable extends Migration
 
     public function down()
     {
-        Schema::dropIfExists('andradedev_subscribe_subscribers');
+        Schema::dropIfExists('rezguidev_subscribe_subscribers');
     }
 
 }

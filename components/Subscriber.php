@@ -49,6 +49,7 @@ class Subscriber extends ComponentBase
     {
         $data = [
             "email" => post('email'),
+            "sdate" => post('sdate'),			
             "latitude" => post('latitude'),
             "longitude" => post('longitude'),
             "code" => Str::random(20)

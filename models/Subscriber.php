@@ -11,7 +11,7 @@ class Subscriber extends Model
     /**
      * @var string The database table used by the model.
      */
-    public $table = 'andradedev_subscribe_subscribers';
+    public $table = 'rezguidev_subscribe_subscribers';
 
     /**
      * @var array Guarded fields
@@ -21,7 +21,7 @@ class Subscriber extends Model
     /**
      * @var array Fillable fields
      */
-    protected $fillable = ['email', 'latitude', 'longitude', 'code'];
+    protected $fillable = ['email', 'latitude', 'longitude', 'sdate','code'];
 
 
 }
