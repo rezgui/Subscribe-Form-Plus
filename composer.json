@@ -1,14 +1,14 @@
 {
-    "name": "andradedev/simple-subscribe",
+    "name": "rezgui/simple-subscribe-plus",
     "type": "october-plugin",
-    "description": "A simple Subscribe form for October CMS",
-    "keywords": ["october", "cms", "simple", "subscribe", "Jorge", "Andrade", "andradedev"],
+    "description": "A another simple Subscribe form for October CMS (fork from andradedev/simple-subscribe)",
+    "keywords": ["october", "cms", "simple", "subscribe", "Yacine", "REZGUI", "yacine rezgui"],
     "license": "MIT",
 
     "authors": [
         {
-            "name": "Jorge Andrade",
-            "email": "j.andrade.dev@gmail.com",
+            "name": "Yacine REZGUI",
+            "email": "yacine.rezgui@gmail.com",
             "role": "Developer"
         }
     ],
@@ -17,7 +17,7 @@
     },
     "autoload": {
         "psr-4": {
-            "JorgeAndrade\\Subscribe\\": ""
+            "Rezgui\\Subscribe\\": ""
         }
     },
     "extra": {
