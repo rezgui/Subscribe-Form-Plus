@@ -3,16 +3,16 @@
 # ===================================
 
 # Model List Column configuration
-list: $/jorgeandrade/subscribe/models/subscriber/columns.yaml
+list: $/rezgui/subscribe/models/subscriber/columns.yaml
 
 # Model Class name
-modelClass: JorgeAndrade\Subscribe\Models\Subscriber
+modelClass: REZGUI\Subscribe\Models\Subscriber
 
 # List Title
 title: Manage Subscribers
 
 # Link URL for each record
-recordUrl: jorgeandrade/subscribe/subscribers/update/:id
+recordUrl: rezgui/subscribe/subscribers/update/:id
 
 # Message to display if the list is empty
 noRecordsMessage: backend::lang.list.no_records

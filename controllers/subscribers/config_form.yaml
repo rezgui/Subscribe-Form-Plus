@@ -6,25 +6,25 @@
 name: Subscriber
 
 # Model Form Field configuration
-form: $/jorgeandrade/subscribe/models/subscriber/fields.yaml
+form: $/rezgui/subscribe/models/subscriber/fields.yaml
 
 # Model Class name
-modelClass: JorgeAndrade\Subscribe\Models\Subscriber
+modelClass: REZGUI\Subscribe\Models\Subscriber
 
 # Default redirect location
-defaultRedirect: jorgeandrade/subscribe/subscribers
+defaultRedirect: rezgui/subscribe/subscribers
 
 # Create page
 create:
     title: Create Subscriber
-    redirect: jorgeandrade/subscribe/subscribers/update/:id
-    redirectClose: jorgeandrade/subscribe/subscribers
+    redirect: rezgui/subscribe/subscribers/update/:id
+    redirectClose: rezgui/subscribe/subscribers
 
 # Update page
 update:
     title: Edit Subscriber
-    redirect: jorgeandrade/subscribe/subscribers
-    redirectClose: jorgeandrade/subscribe/subscribers
+    redirect: rezgui/subscribe/subscribers
+    redirectClose: rezgui/subscribe/subscribers
 
 # Preview page
 preview:

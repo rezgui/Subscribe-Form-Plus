@@ -1,9 +1,9 @@
-<?php namespace JorgeAndrade\Subscribe\Components;
+<?php namespace REZGUI\Subscribe\Components;
 
 use Cms\Classes\ComponentBase;
 use Str;
 use URL;
-use JorgeAndrade\Subscribe\Models\Subscriber as Subs;
+use REZGUI\Subscribe\Models\Subscriber as Subs;
 
 class Subscriber extends ComponentBase
 {
@@ -42,7 +42,7 @@ class Subscriber extends ComponentBase
 
     public function onRun()
     {
-        $this->addJs('/plugins/jorgeandrade/subscribe/assets/javascript/subscribe-scripts.js');
+        $this->addJs('/plugins/rezgui/subscribe/assets/javascript/subscribe-scripts.js');
     }
 
     public function onAddSubscriber()
@@ -58,7 +58,7 @@ class Subscriber extends ComponentBase
 
             $subscriber = Subs::create($data);
             $data['url'] = URL::to($this->property('urlToUnsubscribe')."/".$data['code']);
-            \Mail::send('jorgeandrade.subscribe::mail.subscribe', $data, function($message) use ($data) {
+            \Mail::send('rezgui.subscribe::mail.subscribe', $data, function($message) use ($data) {
                 $message->to($data['email'], 'Hi New Subscriber');
             });
 

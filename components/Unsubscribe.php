@@ -1,7 +1,7 @@
-<?php namespace JorgeAndrade\Subscribe\Components;
+<?php namespace REZGUI\Subscribe\Components;
 
 use Cms\Classes\ComponentBase;
-use JorgeAndrade\Subscribe\Models\Subscriber as Subs;
+use REZGUI\Subscribe\Models\Subscriber as Subs;
 
 class Unsubscribe extends ComponentBase
 {
@@ -62,7 +62,7 @@ class Unsubscribe extends ComponentBase
              $subscriber->status = 0;
              $subscriber->code = null;
              $subscriber->save();
-            \Mail::send('jorgeandrade.subscribe::mail.unsubscribe', $data, function($message) use ($email) {
+            \Mail::send('rezgui.subscribe::mail.unsubscribe', $data, function($message) use ($email) {
                 $message->to($email, 'Bye old Subscriber');
             });
 

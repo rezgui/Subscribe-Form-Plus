@@ -16,9 +16,9 @@ class Plugin extends PluginBase
     public function pluginDetails()
     {
         return [
-            'name'        => 'Subscribe Plus',
-            'description' => 'A another simple Subscribe form for October CMS (fork from andradedev/simple-subscribe)',
-            'author'      => 'Yacine REZGUI',
+            'name'        => 'Subscribe',
+            'description' => 'A simple Subscribe form for October CMS',
+            'author'      => 'Jorge Andrade',
             'icon'        => 'icon-rss'
         ];
     }
